@@ -60,7 +60,7 @@ const SystemsWithSoulCaseStudy = () => {
                                     <span className="text-gray-900 italic">Task 1:</span> Designing a brand identity and digital home for <span className="text-gray-900 italic">Soul Capsule</span> — a community built on the principles of systemic design.
                                 </p>
                                 <p className="text-lg md:text-xl text-gray-600 leading-tight mb-8 font-medium">
-                                    <span className="text-gray-900 italic">Task 2:</span> Create more consistent visual identity for client's online presence across social media platforms and finalize the personal website.
+                                    <span className="text-gray-900 italic">Task 2:</span> Create a more consistent visual identity for client's online presence across social media platforms and finalize the personal website.
                                 </p>
 
                                 {/* Meta strip */}
@@ -249,7 +249,7 @@ const SystemsWithSoulCaseStudy = () => {
                                 <p className="text-primary text-lg font-bold">Personal Website</p>
                                 <br />
                                 <p className="text-lg text-gray-600 leading-relaxed">
-                                    For Personal website, existing branding materials have been reviewd and created a content audit to assess the content quality, visual identity, alignment with the UX design guidelines.
+                                    For Personal website, existing branding materials have been reviewed and a content audit was created to assess the content quality, visual identity, alignment with the UX design guidelines.
                                 </p>
 
                             </div>

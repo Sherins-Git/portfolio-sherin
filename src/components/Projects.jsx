@@ -15,9 +15,22 @@ const projectsData = {
             category: "Development",
             role: "Technology Analyst",
             description: "Developed backend APIs to support a new partner portal, enabling seamless integration between external partner systems and internal enterprise platforms.",
-            challenge: "Needed secure, scalable APIs for vendor integration, with synchronization between the partner portal and internal systems at enterprise scale.",
-            approach: "Developed REST APIs using Java, Spring Boot, and Hibernate. Implemented business logic and database operations using Oracle PL/SQL procedures and scripts. Performed API testing and validation using Postman. Managed version control with Tortoise SVN and contributed todeployment processes. Debugged and resolved production issues.",
-            impact: "Enabled seamless partner-to-internal system integration, improved automation of partner data synchronization, and enhanced system scalability.",
+            challenge: [
+                "Needed secure, scalable APIs for vendor integration.",
+                "Required synchronization between the partner portal and internal systems at enterprise scale."
+            ],
+            approach: [
+                "Developed REST APIs using Java, Spring Boot, and Hibernate.",
+                "Implemented business logic and database operations using Oracle PL/SQL procedures and scripts.",
+                "Performed API testing and validation using Postman.",
+                "Managed version control with Tortoise SVN and contributed to deployment processes.",
+                "Debugged and resolved production issues."
+            ],
+            impact: [
+                "Enabled seamless partner-to-internal system integration.",
+                "Improved automation of partner data synchronization.",
+                "Enhanced system scalability."
+            ],
             tech: ["Java", "Spring Boot", "Hibernate", "REST APIs", "Oracle PL/SQL", "Maven", "SVN", "Postman"],
         },
         {
@@ -26,9 +39,23 @@ const projectsData = {
             category: "Development",
             role: "Technology Analyst",
             description: "Worked on migrating warehouse operations from a legacy system to a modern enterprise warehouse management platform.",
-            challenge: "Required reliable batch processing integration between warehouse systems. Needed automation and reliable job scheduling for warehouse operations. Ensured smooth transition without disrupting warehouse workflows.",
-            approach: "Developed and modified Java-based backend services. Created and configured batch jobs using enterprise scheduling tools. Integrated backend services with warehouse workflows. Fixed system bugs and optimized batch processing reliability. Supported database operations and service integration.",
-            impact: "Enabled successful warehouse platform migration, improved reliability of batch processing operations, and reduced manual operational overhead.",
+            challenge: [
+                "Required reliable batch processing integration between warehouse systems.",
+                "Needed automation and reliable job scheduling for warehouse operations."
+            ],
+            approach: [
+                "Developed and modified Java-based backend services.",
+                "Created and configured batch jobs using enterprise scheduling tools.",
+                "Integrated backend services with warehouse workflows.",
+                "Fixed system bugs and optimized batch processing reliability.",
+                "Supported database operations and service integration."
+            ],
+            impact: [
+                "Enabled successful warehouse platform migration.",
+                "Improved reliability of batch processing operations.",
+                "Reduced manual operational overhead.",
+                "Ensured smooth transition without disrupting warehouse workflows."
+            ],
             tech: ["Java", "Oracle PL/SQL", "Control-M", "IntelliJ IDEA", "WinSCP"],
         },
         {
@@ -37,9 +64,22 @@ const projectsData = {
             category: "Development",
             role: "Senior Systems Engineer",
             description: "Contributed to re-engineering a large retail supply chain system by improving master data management and integrating legacy applications with newer enterprise platforms.",
-            challenge: "Legacy desktop applications had tight coupling with supply chain processes, requiring integration across inventory, warehouse, transport, and handheld device systems. Needed improved database structure and API communication",
-            approach: "Developed backend features and enhancements in C# .NET, designed and implemented Oracle database tables, stored procedures and business logic. Implemented SOAP-based and RESTful web services for inter-system communication. Prepared technical documentation for maintainability and knowledge transfer.",
-            impact: "Improved data integration between critical supply chain systems. Reduced dependency on legacy components. Enhanced overall system stability and maintainability.",
+            challenge: [
+                "Legacy desktop applications had tight coupling with supply chain processes.",
+                "Required integration across inventory, warehouse, transport, and handheld device systems.",
+                "Needed improved database structure and API communication."
+            ],
+            approach: [
+                "Developed backend features and enhancements in C# .NET.",
+                "Designed and implemented Oracle database tables, stored procedures and business logic.",
+                "Implemented SOAP-based and RESTful web services for inter-system communication.",
+                "Prepared technical documentation for maintainability and knowledge transfer."
+            ],
+            impact: [
+                "Improved data integration between critical supply chain systems.",
+                "Reduced dependency on legacy components.",
+                "Enhanced overall system stability and maintainability."
+            ],
             tech: ["C#", ".NET Framework", "SOAP APIs", "Oracle PL/SQL", "Tortoise SVN"],
         },
         {
@@ -48,9 +88,20 @@ const projectsData = {
             category: "Development",
             role: "Software Programmer",
             description: "Developed a web-based POS application supporting restaurant ordering, billing, kitchen display systems, and delivery tracking using a .NET backend.",
-            challenge: "Needed a reliable, real-time system to manage complex multi-workflow restaurant operations including ordering, billing, kitchen display, and delivery — all communicating through a shared backend.",
-            approach: "Built RESTful APIs using .NET to bridge frontend and backend, designed SQL Server tables and stored procedures, and collaborated closely with the team on testing, bug fixing, and feature improvements. Contributed to the development of user interface for POS application, price display and sales summary application  with data visualization and ERP integration.",
-            impact: "Delivered a fully functional POS platform supporting end-to-end restaurant operations, improving operational efficiency and order accuracy.",
+            challenge: [
+                "Needed a reliable, real-time system to manage complex multi-workflow restaurant operations.",
+                "Required ordering, billing, kitchen display, and delivery to all communicate through a shared backend."
+            ],
+            approach: [
+                "Built RESTful APIs using .NET to bridge frontend and backend.",
+                "Designed SQL Server tables and stored procedures.",
+                "Collaborated closely with the team on testing, bug fixing, and feature improvements.",
+                "Contributed to the development of user interface for POS application, price display and sales summary application with data visualization and ERP integration."
+            ],
+            impact: [
+                "Delivered a fully functional POS platform supporting end-to-end restaurant operations.",
+                "Improved operational efficiency and order accuracy."
+            ],
             tech: [".NET", "RESTful APIs", "SQL Server", "HTML", "CSS", "Angular"],
         },
 
@@ -127,21 +178,33 @@ const DevProjectCard = ({ project }) => (
                     <span className="w-2 h-2 rounded-full bg-red-400 inline-block"></span>
                     Challenge
                 </h4>
-                <p className="text-gray-600 text-base leading-relaxed">{project.challenge}</p>
+                <ul className="list-disc list-outside ml-4 text-gray-600 text-base leading-relaxed space-y-2">
+                    {Array.isArray(project.challenge) ? project.challenge.map((point, i) => (
+                        <li key={i}>{point}</li>
+                    )) : <li>{project.challenge}</li>}
+                </ul>
             </div>
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-100">
                 <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-3 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-blue-400 inline-block"></span>
                     Approach
                 </h4>
-                <p className="text-gray-600 text-base leading-relaxed">{project.approach}</p>
+                <ul className="list-disc list-outside ml-4 text-gray-600 text-base leading-relaxed space-y-2">
+                    {Array.isArray(project.approach) ? project.approach.map((point, i) => (
+                        <li key={i}>{point}</li>
+                    )) : <li>{project.approach}</li>}
+                </ul>
             </div>
             <div className="bg-gray-50 rounded-xl p-5 border border-gray-100">
                 <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest mb-3 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-green-400 inline-block"></span>
                     Impact
                 </h4>
-                <p className="text-gray-600 text-base leading-relaxed">{project.impact}</p>
+                <ul className="list-disc list-outside ml-4 text-gray-600 text-base leading-relaxed space-y-2">
+                    {Array.isArray(project.impact) ? project.impact.map((point, i) => (
+                        <li key={i}>{point}</li>
+                    )) : <li>{project.impact}</li>}
+                </ul>
             </div>
         </div>
 

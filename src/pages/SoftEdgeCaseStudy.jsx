@@ -381,7 +381,7 @@ const SoftEdgeCaseStudy = () => {
                         <div className="space-y-6">
                             <p className="text-lg text-gray-600 max-w-5xl">
                                 To understand the barrier, a <span className="font-bold">Research Survey</span> was developed and shared with target users to identify the core issue.<br />
-                                The responses says that most of the students/ graduates feel underprepared for workplace conversations.
+                                The responses say that most of the students/ graduates feel underprepared for workplace conversations.
                                 Many currently 'wing it' with no solid solution or user-friendly platforms.<br />
                                 A common frustration is the lack of structured, constructive, real-time feedback and a judgment-free environment for practice.
                                 Users think that gamified learning increases retention, motivation and engagement.
