@@ -53,17 +53,7 @@ const projectsData = {
             impact: "Delivered a fully functional POS platform supporting end-to-end restaurant operations, improving operational efficiency and order accuracy.",
             tech: [".NET", "RESTful APIs", "SQL Server", "HTML", "CSS", "Angular"],
         },
-        {
-            id: 5,
-            title: "Retail & Restaurant POS System",
-            category: "Development",
-            role: "Software Programmer",
-            description: "Developed a web-based POS application supporting restaurant ordering, billing, kitchen display systems, and delivery tracking using a .NET backend.",
-            challenge: "Needed a reliable, real-time system to manage complex multi-workflow restaurant operations including ordering, billing, kitchen display, and delivery — all communicating through a shared backend.",
-            approach: "Built RESTful APIs using .NET to bridge frontend and backend, designed SQL Server tables and stored procedures, and collaborated closely with the team on testing, bug fixing, and feature improvements. Contributed to the development of user interface for POS application, price display and sales summary application  with data visualization and ERP integration.",
-            impact: "Delivered a fully functional POS platform supporting end-to-end restaurant operations, improving operational efficiency and order accuracy.",
-            tech: [".NET", "RESTful APIs", "SQL Server", "HTML", "CSS", "Angular"],
-        },
+
     ],
     ux: [
         {
