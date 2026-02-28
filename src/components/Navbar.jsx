@@ -58,7 +58,7 @@ const Navbar = () => {
             <div className="w-full px-8 md:px-24 lg:px-48 flex justify-between items-center">
                 <div className="font-bold text-4xl tracking-tighter cursor-pointer transition-colors duration-300 text-gray-900 drop-shadow-sm">
                     <RouterLink to="/" onClick={() => window.scrollTo(0, 0)}>
-                        <span className="text-primary">Sherin</span>Pattukalathil<span className="text-primary">.</span>
+                        Sher<span className="text-primary">in.</span>
                     </RouterLink>
                 </div>
 

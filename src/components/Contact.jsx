@@ -17,9 +17,9 @@ const Contact = () => {
                         {/* Left Side: Form */}
                         <div>
                             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-                            <p className="text-gray-600 mb-10 text-xl md:text-2xl leading-relaxed">Interested in working together? Let's connect!</p>
+                            <p className="text-gray-600 mb-10 text-lg md:text-xl leading-relaxed">Interested in working together? Let's connect!</p>
 
-                            <form className="space-y-6">
+                            <form className="space-y-4">
                                 <div>
                                     <label htmlFor="name" className="block text-lg font-medium text-gray-700 mb-2">Name</label>
                                     <input
@@ -27,6 +27,7 @@ const Contact = () => {
                                         id="name"
                                         className="w-full px-6 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none bg-gray-50 text-xl"
                                         placeholder="Your Name"
+                                        required
                                     />
                                 </div>
                                 <div>
@@ -36,6 +37,7 @@ const Contact = () => {
                                         id="email"
                                         className="w-full px-6 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none bg-gray-50 text-xl"
                                         placeholder="your@email.com"
+                                        required
                                     />
                                 </div>
                                 <div>
@@ -45,11 +47,12 @@ const Contact = () => {
                                         rows="4"
                                         className="w-full px-6 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none bg-gray-50 resize-none text-xl"
                                         placeholder="Tell me about your project..."
+                                        required
                                     ></textarea>
                                 </div>
                                 <button
                                     type="submit"
-                                    className="w-full py-5 bg-primary text-white font-bold text-lg rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-primary/30 flex justify-center items-center gap-2"
+                                    className="w-full py-5 bg-primary text-white font-bold text-lg rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/30 flex justify-center items-center gap-2"
                                 >
                                     Email me <Send size={20} />
                                 </button>
@@ -62,7 +65,8 @@ const Contact = () => {
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                             <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
-                            <div className="relative z-10 space-y-10 mt-10">
+                            <div className="relative z-10 space-y-10 mt-16">
+
                                 <a href="mailto:sherin.pattukalathil@gmail.com" className="flex items-center gap-6 hover:bg-white/10 p-4 rounded-2xl transition-all">
                                     <div className="p-4 bg-white/20 rounded-xl">
                                         <Mail size={32} />
@@ -79,17 +83,17 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-white/60 text-base mb-1">Connect on LinkedIn</p>
-                                        {/* <p className="text-xl font-medium">linkedin.com/in/sherin</p> */}
+                                        <p className="text-xl font-medium">Sherin Pattukalathil</p>
                                     </div>
                                 </a>
 
-                                <a href="https://github.com/sherinpattuskal" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 hover:bg-white/10 p-4 rounded-2xl transition-all">
+                                <a href="https://github.com/Sherins-Git" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 hover:bg-white/10 p-4 rounded-2xl transition-all">
                                     <div className="p-4 bg-white/20 rounded-xl">
                                         <Github size={32} />
                                     </div>
                                     <div>
                                         <p className="text-white/60 text-base mb-1">Check my code</p>
-                                        {/* <p className="text-xl font-medium">github.com/sherinpattuskal</p> */}
+                                        <p className="text-xl font-medium">Sherins-Git</p>
                                     </div>
                                 </a>
                             </div>

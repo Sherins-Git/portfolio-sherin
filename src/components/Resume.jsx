@@ -10,7 +10,7 @@ const Resume = () => {
                 {/* Download Button - Top Right Outside */}
                 <div className="flex justify-end w-full mb-4">
                     <a
-                        href="/Sherin_Resume.pdf"
+                        href="/sherin_resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 bg-primary text-white px-6 py-2.5 rounded-xl font-bold hover:bg-primary/90 transition-all shadow-md group w-full md:w-auto"

@@ -197,7 +197,7 @@ const UXProjectCard = ({ project }) => (
 
                 <RouterLink
                     to={project.link}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gray-50 text-gray-900 rounded-xl hover:bg-primary hover:text-white transition-all w-fit font-semibold text-base group-hover:shadow-lg group-hover:shadow-primary/20 mt-4"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-xl shadow-md hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/30 transition-all w-fit font-semibold text-base mt-4"
                 >
                     View Case Study <ArrowUpRight size={18} />
                 </RouterLink>
