@@ -66,9 +66,6 @@ const Hero = () => {
                     style={{
                         background: '#0F172A',
                         clipPath: 'polygon(0 0, 100% 0, 88% 100%, 0 100%)',
-                        transition: 'opacity 0.5s ease, filter 0.5s ease',
-                        opacity: dimLeft ? 0.6 : 1,
-                        filter: dimLeft ? 'brightness(0.7)' : 'brightness(1)',
                         zIndex: 10,
                     }}
                     initial={{ x: '-100%' }}
@@ -94,11 +91,11 @@ const Hero = () => {
                         </motion.div>
 
                         {/* Bottom — Word cloud aligned right near image */}
-                        <div className="flex flex-col gap-1 mb-8 items-end text-right">
+                        <div className="flex flex-col gap-1 mb-8 md:items-end text-center md:text-right">
                             {devRows.map((row, rowIdx) => (
                                 <motion.div
                                     key={rowIdx}
-                                    className="flex flex-row items-baseline gap-3 flex-wrap justify-end"
+                                    className="flex flex-row items-baseline gap-3 flex-wrap justify-center md:justify-end"
                                     initial={{ opacity: 0, x: -16 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 1.2 + rowIdx * 0.1, duration: 0.5 }}
@@ -124,9 +121,6 @@ const Hero = () => {
                         background: '#F0F4FF',
                         clipPath: 'polygon(12% 0, 100% 0, 100% 100%, 0 100%)',
                         marginLeft: '-6%',
-                        transition: 'opacity 0.5s ease, filter 0.5s ease',
-                        opacity: dimRight ? 0.6 : 1,
-                        filter: dimRight ? 'brightness(0.9)' : 'brightness(1)',
                         zIndex: 10,
                     }}
                     initial={{ x: '100%' }}
@@ -152,11 +146,11 @@ const Hero = () => {
                         </motion.div>
 
                         {/* Bottom — Word cloud near image bottom */}
-                        <div className="flex flex-col gap-1 mb-8">
+                        <div className="flex flex-col gap-1 mb-8 text-center md:text-left">
                             {uxRows.map((row, rowIdx) => (
                                 <motion.div
                                     key={rowIdx}
-                                    className="flex flex-row items-baseline gap-3 flex-wrap"
+                                    className="flex flex-row items-baseline gap-3 flex-wrap justify-center md:justify-start"
                                     initial={{ opacity: 0, x: 16 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 1.2 + rowIdx * 0.1, duration: 0.5 }}
@@ -199,7 +193,7 @@ const Hero = () => {
                     <img
                         src={Photo}
                         alt="Sherin"
-                        className="h-[75vh] w-auto object-contain object-bottom"
+                        className="h-[55vh] md:h-[75vh] w-auto object-contain object-bottom"
                         style={{
                             filter: 'drop-shadow(-12px 0px 40px rgba(0,0,0,0.55)) drop-shadow(0 20px 60px rgba(0,0,0,0.3))',
                             display: 'block',

@@ -31,8 +31,8 @@ const Skills = () => {
     ];
 
     const uxSkills = [
-        "User Research", "Wireframing", "Prototyping",
-        "Usability Testing", "Figma"
+        "User Research", "Product Design", "Wireframing", "Prototyping",
+        "Usability Testing", "Figma", "Canva", "Miro", "Squarespace"
     ];
 
     return (

@@ -15,8 +15,8 @@ const projectsData = {
             category: "Development",
             role: "Technology Analyst",
             description: "Developed backend APIs to support a new partner portal, enabling seamless integration between external partner systems and internal enterprise platforms.",
-            challenge: "Needed secure, scalable APIs for vendor and partner integration, with reliable synchronization between the partner portal and internal systems at enterprise scale.",
-            approach: "Designed and developed REST APIs using Java, Spring Boot, and Hibernate. Implemented business logic and database operations using Oracle and PL/SQL. Reused and optimized existing database procedures. Performed API testing and validation using Postman. Managed version control and deployment processes. Debugged and resolved production issues.",
+            challenge: "Needed secure, scalable APIs for vendor integration, with synchronization between the partner portal and internal systems at enterprise scale.",
+            approach: "Developed REST APIs using Java, Spring Boot, and Hibernate. Implemented business logic and database operations using Oracle PL/SQL procedures and scripts. Performed API testing and validation using Postman. Managed version control with Tortoise SVN and contributed todeployment processes. Debugged and resolved production issues.",
             impact: "Enabled seamless partner-to-internal system integration, improved automation of partner data synchronization, and enhanced system scalability.",
             tech: ["Java", "Spring Boot", "Hibernate", "REST APIs", "Oracle PL/SQL", "Maven", "SVN", "Postman"],
         },
@@ -33,7 +33,7 @@ const projectsData = {
         },
         {
             id: 3,
-            title: "Supply Chain Master Data ManagementSystem",
+            title: "Supply Chain Master Data Management System",
             category: "Development",
             role: "Senior Systems Engineer",
             description: "Contributed to re-engineering a large retail supply chain system by improving master data management and integrating legacy applications with newer enterprise platforms.",
@@ -217,7 +217,7 @@ const Projects = () => {
 
     return (
         <section id="work" className="py-10 bg-background">
-            <div className="w-full px-6 md:px-12 lg:px-24">
+            <div className="w-full px-4 md:px-12 lg:px-24">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

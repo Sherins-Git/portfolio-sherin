@@ -41,7 +41,7 @@ const About = () => {
                 >
                     <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                         I'm a <span className="font-semibold text-primary">Full-Stack Developer</span> with a strong interest in{' '}
-                        <span className="font-semibold text-primary">UX Research & Design</span>. I enjoy creating applications that are not only functional, but intuitive and meaningful to use.
+                        <span className="font-semibold text-primary">UX Research & Design</span>. I enjoy creating applications that are not only functional, but also intuitive and meaningful to use.
                     </p>
                     <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                         With a background in interactive media, I approach development through both technical precision and human-centered thinking.
@@ -49,7 +49,7 @@ const About = () => {
                     </p>
                     <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                         After completing a UX program and working as a <span className="font-medium text-gray-800">UX Design Intern</span>,
-                        where I conducted user research, designed wireframes, and built prototypes — seamlessly connecting product design with development execution.
+                        I learned to conduct user research, design wireframes, and build prototypes — seamlessly connecting product design with development execution.
                     </p>
 
                 </motion.div>

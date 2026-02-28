@@ -55,8 +55,8 @@ const Navbar = () => {
                 : 'bg-white py-6'
                 }`}
         >
-            <div className="w-full px-8 md:px-24 lg:px-48 flex justify-between items-center">
-                <div className="font-bold text-4xl tracking-tighter cursor-pointer transition-colors duration-300 text-gray-900 drop-shadow-sm">
+            <div className="w-full px-4 md:px-12 lg:px-24 xl:px-48 flex justify-between items-center">
+                <div className="font-bold text-3xl md:text-4xl tracking-tighter cursor-pointer transition-colors duration-300 text-gray-900 drop-shadow-sm">
                     <RouterLink to="/" onClick={() => window.scrollTo(0, 0)}>
                         Sher<span className="text-primary">in.</span>
                     </RouterLink>
