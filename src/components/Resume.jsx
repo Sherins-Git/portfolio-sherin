@@ -48,11 +48,11 @@ const Resume = () => {
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <Phone size={16} className="text-primary" />
-                                    <span className="font-medium">+1(647) 881-2114</span>
+                                    <span className="font-medium">+91 8281422114</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <MapPin size={16} className="text-primary" />
-                                    <span className="font-medium">Scarborough, Ontario, CA</span>
+                                    <span className="font-medium">Kerala, India</span>
                                 </div>
                             </div>
                         </div>
